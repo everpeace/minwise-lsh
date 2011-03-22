@@ -1,0 +1,8 @@
+This is an implementation of locality sensitive hash using minwise permutation families.
+
+About locality sensitive hash, see also below:
+locality sensitive hashing: http://www.mit.edu/~andoni/LSH/
+
+Note that this implementation is based on the paper:
+Piotr Indyk, "A small approximately min-wise independent famili of hash functions," Proceeding of te tenth annual ACM-SIAM symposium on Discrete algorithms (SODA'99) http://www.mathcs.emory.edu/~whalen/Hash/Hash_Articles/A%20Small%20Approximately%20Min-Wise%20Independent%20Family%20of%20Hash%20Functions.pdf
+
