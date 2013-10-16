@@ -19,6 +19,7 @@ public class StringStorageWithInvertedIndexTest {
 	private static final int COUNT = 10000;
 	StringStorageWithInvertedIndex testee;
 
+
 //	@Before
 	public void setUp() throws Exception {
 		testee = new StringStorageWithInvertedIndex();
@@ -40,15 +41,15 @@ public class StringStorageWithInvertedIndexTest {
 			System.out.println(count + ":register " + input);
 		}
 		br.close();
-		in = new FileReader("data.txt");
-		br = new BufferedReader(in);
-
-		while (br.ready()) {
-			String input = br.readLine();
-			testee.register(input.trim());
-			count++;
-			System.out.println(count + ":register " + input);
-		}
+//		in = new FileReader("data.txt");
+//		br = new BufferedReader(in);
+//
+//		while (br.ready()) {
+//			String input = br.readLine();
+//			testee.register(input.trim());
+//			count++;
+//			System.out.println(count + ":register " + input);
+//		}
 		long end = System.currentTimeMillis();
 
 		System.out.println(count + " names registered in " + (end - start)

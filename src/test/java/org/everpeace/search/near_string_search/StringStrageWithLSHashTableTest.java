@@ -85,15 +85,15 @@ public class StringStrageWithLSHashTableTest {
 		}
 		br.close();
 
-		in = new FileReader("data.txt");
-		br = new BufferedReader(in);
-
-		while (br.ready()) {
-			String input = br.readLine();
-			testee.register(input.trim());
-			count++;
-			System.out.println(count + ":register " + input);
-		}
+//		in = new FileReader("data.txt");
+//		br = new BufferedReader(in);
+//
+//		while (br.ready()) {
+//			String input = br.readLine();
+//			testee.register(input.trim());
+//			count++;
+//			System.out.println(count + ":register " + input);
+//		}
 		long end = System.currentTimeMillis();
 
 		System.out.println(count + " names registered in " + (end - start)
@@ -130,7 +130,7 @@ public class StringStrageWithLSHashTableTest {
 			long start = 0, end = 0;
 			switch (d) {
 			case 0:
-				System.out.print("input threshold: ");
+				System.out.print("input threshold[0.0--1.0]: ");
 				int th = 0;
 				boolean done = false;
 				while (done == false) {
